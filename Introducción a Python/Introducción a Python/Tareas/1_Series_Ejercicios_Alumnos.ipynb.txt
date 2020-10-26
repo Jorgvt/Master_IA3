@@ -1,0 +1,311 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<img src=\"idal-logo.png\" align=\"right\" style=\"float\" width=\"400\">\n",
+    "<font color=\"#CA3532\"><h1 align=\"left\">mIA3</h1></font>\n",
+    "<font color=\"#6E6E6E\"><h2 align=\"left\">Ejercicios Pandas. Series</h2></font> \n",
+    "\n",
+    "#### Juan Gómez-Sanchis"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 1.\n",
+    "\n",
+    "Importa el módulo numpy como np,pandas como pd y las fuciones Series y DataFrame de Pandas.\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 2. \n",
+    "\n",
+    "Crea una serie denominada ``obj`` que contenga los valores 4,8,10 y 24. Muestra la serie."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 3. \n",
+    "\n",
+    "Muestra los valores contenidos en la serie que has creado en el ejercicio anterior."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 4. \n",
+    "\n",
+    "Muestra los índices contenidos en la serie que has creado en el ejercicio anterior."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 5. \n",
+    "\n",
+    "Crea la serie ``ww2_cas`` cuyos valores son 8700000,4300000,3000000,2100000,400000 y los índices 'USSR','Germany','China','Japan','USA'."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 6. \n",
+    "\n",
+    "Muestra el valor del índice USA de la serie."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 7.\n",
+    "\n",
+    "Comprueba cuantos índices de la serie ``ww2_cas`` tienen un valor mayor de 4000000."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 8. \n",
+    "\n",
+    "Comprueba si el índice USSR está contenido en la serie ``ww2_cas``."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 9\n",
+    "\n",
+    "Convierte la serie ``ww2_cas`` en un diccionario denominado ``ww2_dict``. Una pista, explora el método ``to_dict`` de una serie."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 10. \n",
+    "\n",
+    "Realiza la operación opuesta, convierte el diccionario ``ww2_dict`` a una nueva serie denominada  ``WW2_Serie``"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 11. \n",
+    "\n",
+    "Crea una serie denominada ``obj2`` a partir del diccionario ``ww2_dict`` cuyos índices vengan dados por  la lista,  ``countries`` = ['China','Germany','Japan','USA','USSR','Argentina']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 12. \n",
+    "\n",
+    "Encuentra los valores ``NaN`` de la serie ``obj2``\n",
+    "."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 13. \n",
+    "\n",
+    "Es posible sumar los valores de bajas en la WWII (es el valor de la serie que estamos trabajando) de la series ``WW2_Series``  y ``obj2``? Cómo lo harías?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 14. \n",
+    "\n",
+    "Proporcionale un nombre a la serie ``obj2``, en concreto \"World War 2 Casualties\". Pista, utiliza el método ``name``."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 15. \n",
+    "\n",
+    "Otra cosa nueva, os pido un poco de imaginación y poder de extrapolación... Intenta añadir un nombre ('Countries') al índice de una serie. Pista, utiliza el atributo de la serie ``index.name``"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "### Vamos a por los dataframes!!!!"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

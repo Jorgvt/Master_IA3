@@ -1,0 +1,659 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<img src=\"idal-logo.png\" align=\"right\" style=\"float\" width=\"400\">\n",
+    "<font color=\"#CA3532\"><h1 align=\"left\">mIA3</h1></font>\n",
+    "<font color=\"#6E6E6E\"><h2 align=\"left\">Ejercicios Pandas. Data Frames</h2></font> \n",
+    "\n",
+    "\n",
+    "\n",
+    "### Documentación de Pandas.  Si algo no te lo he explicado... Puedes buscar allí! ;)\n",
+    "\n",
+    "Abre la web 'http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.html' desde Jupyter  y tendrás acceso a toda la documentación de pandas.\n",
+    "\n",
+    "#### Juan Gómez-Sanchis"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#para cargar una web desde python\n",
+    "import webbrowser\n",
+    "website = 'http://pandas.pydata.org/pandas-docs/dev/generated/pandas.DataFrame.html'\n",
+    "webbrowser.open(website)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 0\n",
+    "Implementa el código para importar:\n",
+    "* La libreria ``numpy`` como ``np`` \n",
+    "* Las funciones ``Series``y ``DataFrame``de ``Pandas``\n",
+    "* La libreria ``Pandas`` como ``pd``"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 1. \n",
+    "\n",
+    "* Carga el fichero \"NFL_jgx.csv\" usando  la función ``read_csv`` de pandas y asignalo a una variable denominada ``data``. Cuidado con las opciones de importación (delimitador de dato, separador decimal y separador de millares).\n",
+    "* Renombra el fichero cargado como ``nfl_frame``.\n",
+    "* Muestra por pantalla el dataframe"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 2.  \n",
+    "\n",
+    "Determina los nombres de las columnas del data frame utilizando un método del mismo."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 3. \n",
+    "\n",
+    "* Consigue un nuevo dataframe denominado ``df1``, empleando la función ``DataFrame`` de ``Pandas`` y su argumento ``Columns``   que contenga las columnas ``Team``, ``First Season`` y  ``Total Games`` del dataframe original ``nfl_frame``.\n",
+    "\n",
+    "* Crea un dataframe idéntico a ``df1`` pero denominado ``df2``indexando las columnas directamente."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Ejercico 4. \n",
+    "\n",
+    "* Repite el ejercicio 3.1, llamando al resultsdso ``df3`` incluyendo una columna que no existe (por ejemplo ``Stadium``) en el dataframe original. ¿Qué ocurre?."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 5. \n",
+    "\n",
+    "* Consigue, de alguna de las maneras que hemos visto en la introducción teórica, acceder  a la serie contenida en la columna ``Team``. \n",
+    "\n",
+    "* Repite el ejercicio accediendo, de otra manera,  a los elementos de la columna ``Total Games``"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 6. \n",
+    "\n",
+    "Queremos acceder al contenido de todas las variables asociadas a la muestra ``Miami Dolphins``. Para ello utiliza dos estrategias:\n",
+    "\n",
+    "* Emplea el método ``iloc`` del data frame ``nfl_frame`` para conseguir una serie  con los elementos del índice donde se encuentra la muestra Miami Dolphins.\n",
+    "* Consigue un nuevo data frame, a partir de indexar automáticamente  aquellas muestras donde la columna ``Team``tome el valor ``Miami Dolphins``"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 7. \n",
+    "\n",
+    "* Añade un columna denominada ``Stadium`` que contenga el estadio de cada equipo. Pero que inicialmente estará inicializada con el string ``'Mestalla'``\n",
+    "\n",
+    "* ¿Qué hariamos para inicializar la variable ``Stadium`` al valor ``NULL``?. Emplea una forma alternativa de indexado a la empleada en el ejercicio anterior "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Ejercicio 8. \n",
+    "\n",
+    "* Modifica el contenido de la columna ``Stadium``, de manera que el primer equipo juegue en el estadio ``0`` y el último en el estadio ``12``. Puedes utilizar la función de numpy ``arange``.\n",
+    "* Muestra las variables del dataframe ``nfl_frame`` después de las modificaciones realizadas."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 9. \n",
+    "\n",
+    "* Crea una serie  denominada ``stadiums`` compuesta por dos elementos \"Mestalla\" y \"Wanda\" y cuyos índices (nombre de las muestras) sean 0  y 4. \n",
+    "* Asigna  a la columna ``Stadium`` el valor de la serie ``stadiums`` y comprueba que ha ocurrido."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 10. \n",
+    "\n",
+    "* Elimina la columna ``stadium`` del dataframe nfl_frame."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 11.\n",
+    "\n",
+    "Construye un dataframe,  a partir de un diccionario python con dos claves ('City' y 'Population') y una lista de 3 valores para cada clave (['SF','LA','NYC'] y [837000,3880000,8400000]). Para ello:\n",
+    "\n",
+    "* Crea un diccionario de python denominado ``data`` con las especificaciones arriba indicadas.\n",
+    "\n",
+    "* Emplea la función Dataframe para convertir el diccionario en un data frame denominado ``city_frame``."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 12.\n",
+    "\n",
+    "* Visualiza las 5 primeras filas del dataframe ``nfl_frame``.\n",
+    "\n",
+    "* Visualiza las 5 últimas filas del dataframe ``nfl_frame``."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 13\n",
+    "Una de las formas más lógicas de crear un data frame es a partir de un diccionario de python. Cada variable de un data frame puede contener diferentes tipos de datos, como muestra el ejemplo a continuación.\n",
+    "\n",
+    "* ¿Cuáles son los tipos de datos contenidos en el data frame de ejemplo ``df_N``\n",
+    "? \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Reales</th>\n",
+       "      <th>Series</th>\n",
+       "      <th>Arrays 1D</th>\n",
+       "      <th>Fechas</th>\n",
+       "      <th>Categoricas</th>\n",
+       "      <th>Strings</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>9999</td>\n",
+       "      <td>2020-01-10</td>\n",
+       "      <td>Validacion</td>\n",
+       "      <td>España</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>9999</td>\n",
+       "      <td>2020-01-10</td>\n",
+       "      <td>test</td>\n",
+       "      <td>España</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>9999</td>\n",
+       "      <td>2020-01-10</td>\n",
+       "      <td>test</td>\n",
+       "      <td>España</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>9999</td>\n",
+       "      <td>2020-01-10</td>\n",
+       "      <td>train</td>\n",
+       "      <td>España</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   Reales  Series  Arrays 1D     Fechas Categoricas Strings\n",
+       "0     1.0     1.0       9999 2020-01-10  Validacion  España\n",
+       "1     1.0     1.0       9999 2020-01-10        test  España\n",
+       "2     1.0     1.0       9999 2020-01-10        test  España\n",
+       "3     1.0     1.0       9999 2020-01-10       train  España"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df_N= pd.DataFrame({'Reales': 1.,\n",
+    "                    'Series': pd.Series(1, index=list(range(4)), dtype='float32'),\n",
+    "                    'Arrays 1D': np.array([9999] * 4, dtype='int32'),\n",
+    "                    'Fechas': pd.Timestamp('20200110'),\n",
+    "                    'Categoricas': pd.Categorical([\"Validacion\", \"test\", \"test\", \"train\"]),\n",
+    "                    'Strings':'España'})\n",
+    "\n",
+    "df_N\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 14\n",
+    "\n",
+    "Ordena los elementos del data frame ``nfl_frame`` en orden descendente para conocer:\n",
+    "\n",
+    "* ¿Qué equipo tiene el mayor número de victorias?\n",
+    "* ¿Qué equipo tiene el mayor número de derrotas?\n",
+    "* ¿Qué equipo tiene el mayor número de empates, (ordena ahora en orden descendente)?\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Ejercicio 15\n",
+    "\n",
+    "Vamos a ejercitar algunas de las funcionalidades que nos ofrecen los data frames, para ello resuelve los siguientes ejercicios:\n",
+    "\n",
+    "* Carga el data set contenido en el fichero ``GlobalLandTemperatures_GlobalLandTemperaturesByMajorCity_jgx.csv`` y almacenalo en la variable ``df_climate1``.\n",
+    "\n",
+    "* Emplea un método del dataframe para conocer su tamaño.\n",
+    "\n",
+    "* Obtén los nombres de las variables del data frame.\n",
+    "\n",
+    "* Visualiza las 6 primeras muestras del data frame.\n",
+    "\n",
+    "* Elimina la primera columna del data frame.\n",
+    "\n",
+    "* Elimina en aquellas muestras que no estén completas (contengan datos ausentes NaN).\n",
+    "\n",
+    "* Visualiza las 6 últimas muestras del data frame.\n",
+    "\n",
+    "* Crea una copia de ``df_climate1`` en un nuevo data frame denominado ``df_climate3`` que apunte a un objeto en memoria diferente. \n",
+    "\n",
+    "* Crea un nuevo data frame denominado ``df_climate3_country`` a partir de ``df_climate3`` que contenga las muestras climáticas correspondientes a la ciudad de Xian.\n",
+    "\n",
+    "* Convierte la variable ``dt`` en una variable de tipo ``datetime`` con formato \"%Y-%m-%d\".\n",
+    "\n",
+    "* Obtén los estadísticos descriptivos de las variables numéricas del dataframe ``df_climate3`` (media, min, max, cuartiles 1 2 y 3, etc..).\n",
+    "\n",
+    "\n",
+    "* Crea un nuevo dataframe denominado ``df_climate4`` a partir de una copia de ``df_climate3`` y cuyo índice (nombre de la muestra) esté constituído por los valores de la variable ``dt``. \n",
+    "\n",
+    "* Elimina las muestras del data frame ``df_climate4`` anteriores a la fecha \"1900-1-2\".\n",
+    "\n",
+    "* Crea un dataframe denominado ``df_climate_80s`` con las muestras del data frame correspondientes a los años 80.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
