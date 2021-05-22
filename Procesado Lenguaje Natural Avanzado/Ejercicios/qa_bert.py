@@ -69,7 +69,7 @@ class QABert:
         ###     YOUR CODE HERE      ###
         sep_idx = torch.where(torch.Tensor(token_ids)==self.tokenizer.sep_token_id)[0][0].item()
         token_type_ids = torch.ones_like(token_ids)
-        token_type_ids[:sep_idx] = torch.tensor(0)
+        token_type_ids[:sep_idx+1] = torch.tensor(0)
 
         # Return the dictionary with the keys `input_ids` and `token_type_ids`
         ###     YOUR CODE HERE      ###
